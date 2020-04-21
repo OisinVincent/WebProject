@@ -46,7 +46,6 @@ title1 a{font-size:60px;}
    title1 a{font-size:16px;}
 }
 
-
 nav{
     background-color: black;
     padding: 0%;
@@ -67,13 +66,11 @@ nav ul{
     font-family: sans-serif;
     text-align: right;
     font-size: 1.2em;
-    background-color: black;  
-    float: right;
+    background-color: black;    
 }
 nav ul li{  
- 
     margin: 0px;
-    border: 0%;
+    border: 0px;
     list-style-type: none;
     background-color: black;
     display: inline;
@@ -106,12 +103,6 @@ nav ul li1 .current{
     padding: 15px;
     text-decoration: none;    
 }
-    
-}
-section 
-{
-  text-align: center;
-}
 /*subscribe*/
 section nav ul l1 a{
     position: absolute;
@@ -123,7 +114,8 @@ section nav ul l1 a{
     border-radius: 10px;
     font-weight: 700;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.3em;
+    
 }
 section nav ul l1 a:hover{
     background-color:transparent;
@@ -138,6 +130,7 @@ section nav ul l1 a:hover{
     transition: all 0.4s ease;
     box-shadow: inset 0 0 10px grey;
 }
+/*Slogan*/
 section a{
     position:absolute;
     font-size: 45px;
@@ -147,18 +140,22 @@ section a{
     cursor:default
 }
 section img{
-     opacity: .80;
+    opacity: .80;
     float: right;
     position:absolute;
     top: 48%;
     left:50%;
     transform: translate(-40%,-50%);
     padding: 10px;
-    box-shadow: inset 0 0 10px black;i
+    box-shadow: inset 0 0 10px black;
+    border: none;
+    transition: opacity .5s ease-out;
+}
+section img:hover{
+    transition: 0.5s;
+    opacity: 1;
 }
 section2{
-    
-    
     float: left;
     background-color: crimson;
     top: 100%;
@@ -176,9 +173,8 @@ section2:hover{
     background-color:black;
     transition: all 0.5s ease;
     cursor: pointer;
-    box-shadow: inset 0 0 10px grey;
+    box-shadow: inset 0 0 10px grey;  
 }
-
 section3{
     
     float: left;
@@ -266,16 +262,12 @@ section5:hover{
     @media all and (max-width: 320px) {
        section2 a{font-size:16px;}
     }
-   
-}
-
 footer{
     position: absolute;
     text-align: center;
     bottom: -30%;
     width: 100%;
 }
-
 footer nav ul {
     clear: both;
     position: absolute;
@@ -301,8 +293,6 @@ and (max-device-width : 480px)
 ::-webkit-scrollbar {
     width: 10px;   
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
@@ -311,11 +301,10 @@ and (max-device-width : 480px)
     background: dimgrey; 
     border-radius: 10px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {  
     background: grey;  
 }
+/*
 section nav1 input[type=text] {
         top: 10%;
         left: 0%;
@@ -330,7 +319,7 @@ section nav1 input[type=text] {
         border-radius: 10px;
         font-weight: 700;
         color: white;
-}
+}/*
 @media screen and (max-width: 600px) {
  section nav1 a, nav1 input, SEARCH...[type=text] {
         float: none;
@@ -340,12 +329,20 @@ section nav1 input[type=text] {
         margin: 0;
         padding: 14px;
         color: white;
+
   }
+<nav1>
+            <ul>
+                
+                <input type="text" placeholder="SEARCH...">
+                
+            </ul>
+        </nav1>
 }
  
 ::placeholder {
         color: white;
-}
+}*/
 arms{
     float: left;
     background-color: crimson;
@@ -372,9 +369,6 @@ arm1{
     text-align: left;
     position: absolute;
 }
-/*iframe{
-    position: absolute;
-}*/
 h2{
     font-family: sans-serif;
     color: white;   
@@ -477,13 +471,13 @@ ourGoal{
     position: absolute;
 }
 ourGoal:hover{
-  background-color:black;
+    background-color:black;
     transition: all 0.5s ease;
     cursor: pointer;
     box-shadow: inset 0 0 10px grey;  
 }
 whatWeOffer{
-      background-color: crimson;
+    background-color: crimson;
     top: 79%;
     width: 100%;
     height: 25%;
@@ -496,22 +490,23 @@ whatWeOffer{
     position: absolute;
 }
 whatWeOffer:hover{
-  background-color:black;
+    background-color:black;
     transition: all 0.5s ease;
     cursor: pointer;
     box-shadow: inset 0 0 10px grey;  
 }
-form{
-    
+aboutus iframe{
     position: absolute;
-    text-align: center;
-    left: 35%;
+    top: 104%;
+    left: 25%;
 }
 .required{
     font-weight: bold;
+    content:" *";
     color: red;
 }
-label {float: left;
+label {
+    float: left;
     width: 112px;
     padding-right: 10px;
     text-align: right;
@@ -525,22 +520,28 @@ input{
      width: 10px;
 }
 input[type="checkbox"]{
-    
     width: 15px;
-}
-
-.required{
-    font-weight: bold;
-    color: red;
 }
 
 .col_article{
     position: absolute;
-    display: flex;
+    display:flex;
     top: 45%;
     width: 99%;
-    column-gap: 20px;
     padding: 2px;
+}
+.col_article img{
+    border: solid white;
+    cursor: zoom-in;
+    transform-origin: 0 0;
+}
+.col_article img:hover{
+    position: absolute;
+    transition-property: all;
+    left: 0%;
+    top:  .7%;
+    width: 49.5%;
+    height: 87%;
 }
 .left_col{
     margin: 2px;
@@ -553,3 +554,150 @@ input[type="checkbox"]{
     text-align: left;
     width: 100%;
 }
+iframe{
+    overflow:hidden;
+    border: solid white;
+}
+input:invalid {
+    border: 2px solid crimson;
+    background-image: url(../Images/asterisk.png);
+    background-size: 20px 16px;
+    background-position: right top;
+    background-repeat: no-repeat;
+  
+}
+input:valid{
+    border: 2px solid limegreen;
+    background-image: url(../Images/tick.png);
+    background-size: 16px 16px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+textarea:valid{
+     border: 2px solid limegreen;
+    background-image: url(../Images/tick.png);
+    background-size: 16px 16px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+textarea:invalid{
+     border: 2px solid crimson;
+    background-image: url(../Images/asterisk.png);
+    background-size: 20px 16px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+/*#button, #reset{
+    text-align: center;
+    float: left;
+    width: 8em;
+    color: white;
+    background-color: crimson;
+    border: 2px solid white;
+}*/
+#button{
+    position: absolute;
+    top: 80%;
+    left: 7.4%;
+     border: 2px solid limegreen;
+    background-image: url(../Images/tick.png);
+    background-size: 16px 16px;
+    width:100px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+#reset{
+     position: absolute;
+    top: 80%;
+    left: 16.5%;
+     border: 2px solid crimson;
+    background-image: url(../Images/asterisk.png);
+    background-size: 20px 16px;
+     width:100px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+#button1{
+    position: absolute;
+    top: 71%;
+    left: 57.3%;
+     border: 2px solid limegreen;
+    background-image: url(../Images/tick.png);
+    background-size: 16px 16px;
+    width:100px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+#reset1{
+    position: absolute;
+    top: 71%;
+    left: 66.4%;
+    border: 2px solid crimson;
+    background-image: url(../Images/asterisk.png);
+    background-size: 20px 16px;
+    width:100px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+::placeholder{
+    color: grey;
+    font-family:monospace;
+}
+a1{
+    color: lightsteelblue;
+    text-decoration: underline;
+    text-decoration-color: lightsteelblue;
+}
+a1:hover{
+    color: crimson;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+bottom{
+    position: absolute;
+    bottom: -47%;
+    background-color: crimson;
+    width: 100%;
+    padding: 7px;
+    padding-bottom: 25px;
+    left: 0%;
+}
+article1 img{
+    overflow: hidden;
+    opacity: .8;
+    position:absolute;
+    top: 69.8%;
+    left:41%;
+    width: 86%;
+    transform: translate(-40%,-50%);
+    box-shadow: inset 0 0 10px black;
+    padding-left:250px; 
+    border-bottom: solid white;
+    transition: opacity .5s ease-out;
+}
+article1 img:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/*input:required:invalid, input:focus:invalid {
+    content:" *";
+    color: red;
+}
+.required:valid{
+    content:" ✓ ";
+    color: limegreen;
+}
+*/
+/*
+*input:required:invalid, input:focus:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+  input:required:valid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }*/
+
