@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32X32" />
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png" />
     <meta charset="utf-8" />
     <meta name="description" content="Fitness">
     <meta name="keywords" content="Fitness, QuamFitness, Website, Webpage">
@@ -10,85 +10,109 @@
     <title>QUAMFITNESS</title>
     <link rel="stylesheet" type="text/css" href="Styles/mainStyles.css" />
 </head>
-<top></top>
 
 <body>
-    <title1>
-        <a><img src="Images/favicon.ico" ;>QUAMFITNESS</a>
-    </title1>
+
+    <aside class="logo">
+        <a><img src="Images/favicon.ico" alt="logo">QUAMFITNESS</a>
+    </aside>
+
     <nav>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="workouts.html">WORKOUTS</a></li>
             <li><a href="sports.html">SPORTS</a></li>
-            <li><a class="current" href="signIn.html">LOG IN / SIGN UP</a>
+            <li><a href="signIn.html">LOG IN / SIGN UP</a>
             </li>
         </ul>
     </nav>
-</body>
-<whoAreWe>
+
+<section class="whoAreWe">
     <h1>HAVE A QUERY ? / WANT TO GET IN TOUCH ?</h1>
 
-</whoAreWe>
-<article1> <img src="Images/pushup.jpg" style="z-index:-5;" alt="PushUP"></article1>
+</section>
+    <section class="article1"> <img src="Images/pushup.jpg" style="z-index:-5;" alt="PushUP"></section>
 <article class="col_article">
-    <article class="left_col" action=" http://year1.ccpdev.me/FormTest.php" method="get">
+  
+    <article class="left_col">
         <h2>DONT HAVE AN ACCOUNT</h2>
-
-        <label form="first_name"><a>First name  :</a> <span class="required"></span></label>
-        <input type="text" name="first_name" id="first_name" autofocus required placeholder="Joe">
+        <form action=" http://year1.ccpdev.me/FormTest.php" method="get">
+        <label for="first_name"><a>First name  :</a> <span class="required"></span></label>
+        <input type="text" id="first_name" autofocus required placeholder="Joe">
         <br>
         <label for="last_name"><a>Surname  :</a><span class="required"></span></label>
-        <input type="text" name="last_name" id="last_name" required placeholder="Doe">
+        <input type="text"  id="last_name" required placeholder="Doe">
         <br>
         <label for="email"><a>Email:</a><span class="required"></span></label>
-        <input type="text" name="email" id="email" required placeholder="johndoe@example.com">
+        <input type="text"  id="email" required placeholder="johndoe@example.com">
         <br>
 
         <label for="gender"><a>Gender:</a></label>
-        <input type="radio" id="gender" name="gender" value=male><a>Male</a>
-        <input type="radio" id="gender" name="gender" value=female><a>Female</a>
-        <input type="radio" id="gender" name="gender" value=other required checked><a>Other</a>
+        <input type="radio" id="gender" value=male><a>Male</a>
+        <input type="radio"  value=female><a>Female</a>
+        <input type="radio"  value=other required checked><a>Other</a>
         <br>
 
         <label for="message"><a>Query:  </a> </label>
-        <textarea cols="30" rows="6" id="message" name="message" placeholder="Your message must be lessthen 200 charcters" data-maxlenght="200" required></textarea>
+        <textarea cols="30" rows="6"  placeholder="Your message must be lessthen 200 charcters" data-maxlenght="200" required></textarea>
         <br>
-        <input type="submit" name="submit" id="button" value="SUBMIT">
-        <input type="RESET" name="reset" id="reset" value="RESET"><br>
+        <input type="submit"  id="button" value="SUBMIT">
+        <input type="RESET"  id="reset" value="RESET"><br>
         <p style="margin-left: 138px"><span class="required">*</span><em> <a>indicates a required field</a></em></p>
+            </form>
+        
+  
     </article>
-    <article class="right_col"action=" http://year1.ccpdev.me/FormTest.php" method="get">
+    
+     
+    <article class="right_col">
         <h2>HAVE AN ACCOUNT</h2>
+        <form action=" http://year1.ccpdev.me/FormTest.php" method="get">
         <label for="email"><a>Email / Username  :</a><span class="required"></span></label>
-        <input type="text" name="email" id="email" required placeholder="johndoe@example.com">
+        <input type="text"   required placeholder="johndoe@example.com">
         <br>
         <br>
-        <label form="pswd"><a>Password  :</a> <span class="required"></span></label>
-        <input type="text" name="pswd" id="pswd" autofocus required placeholder="Password">
+        <label for="pswd"><a>Password  :</a> <span class="required"></span></label>
+        <input type="text"  id="pswd"  required placeholder="Password">
         <br>
        <label for="message"><a>Query:  </a> </label>
-        <textarea cols="30" rows="6" id="message" name="message" placeholder="Your message must be lessthen 200 charcters" data-maxlenght="200" required></textarea>
+        <textarea cols="30" rows="6" id="message"  placeholder="Your message must be lessthen 200 charcters" data-maxlenght="200" required></textarea>
         <br>
-        <input type="submit" name="submit" id="button1" value="SUBMIT">
-        <input type="RESET" name="reset" id="reset1" value="RESET"><br>
+        <input type="submit"  id="button1" value="SUBMIT">
+        <input type="RESET"  id="reset1" value="RESET"><br>
         <p style="margin-left: 138px"><span class="required">*</span><em> <a>indicates a required field</a></em></p>
-    </article>
+        </form>
+         <table>
+  <tr>
+    <th>Contact Us</th>
+    <th colspan="1">Telephone</th>  
+      <th colspan="1">Email</th>
+  </tr>
+  <tr>
+    <td>Here</td>
+      <td>(353)123-456-789</td>
+    <td>quamfitness@gmail.com</td>
+  </tr>
+</table>
 </article>
+    </article>
+
 
 <footer>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a href="workouts.html">WORKOUTS</a></li>
-            <li><a href="sports.html">SPORTS</a></li>
-            <li1><a class="current" href="contact.html">CONTACT</a></li1>
-            <p><a> Copyright© 2020</a></p>
-        </ul>
-    </nav>
-</footer>
-<bottom></bottom>
 
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="workouts.html">WORKOUTS</a></li>
+                <li><a href="sports.html">SPORTS</a></li>
+                <li  class="current"><a href="contact.html">CONTACT</a></li>
+
+            </ul>
+        </nav>
+    </footer>
+    <div class="top"></div>
+    <div class="bottom"><a> Copyright© 2020</a></div>
+</body>
 </html>
