@@ -582,7 +582,7 @@ textarea:invalid{
 
 #button{
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 7.4%;
      border: 2px solid limegreen;
     background-image: url(../Images/tick.png);
@@ -593,7 +593,7 @@ textarea:invalid{
 }
 #reset{
      position: absolute;
-    top: 80%;
+    top: 70%;
     left: 16.5%;
      border: 2px solid crimson;
     background-image: url(../Images/asterisk.png);
@@ -604,7 +604,7 @@ textarea:invalid{
 }
 #button1{
     position: absolute;
-    top: 71%;
+    top: 62%;
     left: 57.3%;
      border: 2px solid limegreen;
     background-image: url(../Images/tick.png);
@@ -615,7 +615,7 @@ textarea:invalid{
 }
 #reset1{
     position: absolute;
-    top: 71%;
+    top: 62%;
     left: 66.4%;
     border: 2px solid crimson;
     background-image: url(../Images/asterisk.png);
